@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f2fcfa;
+}
+
+/*1rem = 16px - 100rem = 1000px; 100*10=mil sempre multiplicar por 10 */
+html {
+    font-size: 10px;
+}
+
+.dsf-container {
+    width: 100rem;
+    height: auto;    
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.05);
+    margin: 160px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.dsf-left-columm {
+    display: flex;
+    width: calc(100% - 38rem);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 9rem 0;
+}
+
+.dsf-left-columm h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    color: #FF171B;    
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    margin-top: 0;
+}
+
+.dsf-icons {
+    display: flex;
+    width: 100%;
+    height: 3.2rem;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.dsf-icons a {
+    width: 3.2rem;
+    height: 3.2rem;
+    border: .1rem solid #05013B;
+    display: block;
+    border-radius: 50%;
+    margin: 0 .8rem; /* 0.8rem = 8px*/   
+    background-size: 1.6rem auto;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#dsf-google{
+    background-image: url('/img/google.svg');
+    
+}
+#dsf-facebook{
+    background-image: url('/img/fb.svg');
+}
+#dsf-twitter{
+    background-image: url('/img/twitter.svg');
+}
+#dsf-linkedin{
+    background-image: url('/img/in.svg');
+}
+
+.dsf-right-columm {
+    width: 38rem;  
+    height: 73.9rem;
+    background-image: url('/img/img.jpg');  
+}
+
+.dsf-right-columm img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.dsf-left-columm h2 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #030026; 
+    font-family: 'Montserrat', sans-serif;   
+    font-weight: 400;
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+.dsf-form {
+    width: 41rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.dsf-form input {
+    width: 100%;
+    display: block;
+    background-color: #F2F6FA;
+    border: .1rem solid #aCC9E6;
+    border-radius: .8rem;
+    margin-bottom: 1.6rem;
+}
+
+.dsf-form input::placeholder {
+    color: #C3D4E5;
+    font: 1.6rem;
+    padding-left: 1.5rem;    
+}
+
+dsf-form-actions {
+   width: 100%;
+   height: 4rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start; 
+   align-items: center;
+   margin-top: 3.2rem;
+}
+
+.dsf-form-actions input[type="checkbox"] {
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+    position: relative;  
+    border: none;
+    margin-right: 1.6rem;
+    background: transparent;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.dsf-form-actions input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: block;
+    border-radius: .4rem;
+    background-color: #FF171B;
+}
+
+.dsf-form-actions input[type="checkbox"]:checked:before {
+    content: "";
+    background-image: url('/img/check.svg');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.dsf-form-actions p {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #05013B;
+    text-align: left;
+    margin-top: 0;
+}
+
+.dsf-form-actions p a{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #FF171B;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dsf-form-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 5.5rem;
+    margin-top: 4rem;
+}
+.dsf-form-footer button {
+    width: calc(50% - 1rem);
+    border-radius: .8rem;
+}
+.dsf-btn-filled {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    line-height: 5.5rem; 
+    border: none;
+    color: #fff;    
+    background-color: #FF171B;
+}
+
+.dsf-btn-outlined {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    line-height: 5.5rem; 
+    border: .1rem solid #FF171B;
+    color: #FF171B;    
+    background-color: transparent;
+}
